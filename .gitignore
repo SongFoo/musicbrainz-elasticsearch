@@ -1,0 +1,14 @@
+# Eclipse files
+.project
+.classpath
+.settings
+
+# IntelliJ IDEA files
+.idea
+*.iml
+
+# Compiled classes
+target
+
+# Elasticsearch data
+data

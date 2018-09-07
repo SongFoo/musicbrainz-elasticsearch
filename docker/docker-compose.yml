@@ -1,0 +1,11 @@
+postgresql:
+  image: arey/musicbrainz-database
+  ports:
+   - "5432:5432"
+  env_file:
+   - ./postgres.env
+elasticsearch:
+  image: elasticsearch:1.7.1
+  ports:
+   - "9200:9200"
+   - "9300:9300"

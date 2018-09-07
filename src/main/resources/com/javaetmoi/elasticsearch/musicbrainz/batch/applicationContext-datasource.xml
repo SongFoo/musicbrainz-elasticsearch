@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <description>Define the MusicBrainz PostgreSQL data source</description>
+
+  <bean id="musicBrainzDataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+    <property name="driverClass" value="${db.musicbrainz.driver.class}" />
+    <property name="url" value="${db.musicbrainz.url}" />
+    <property name="username" value="${db.musicbrainz.user}" />
+    <property name="password" value="${db.musicbrainz.password}" />
+  </bean>
+
+</beans>
